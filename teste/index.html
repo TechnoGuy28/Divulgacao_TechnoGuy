@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Profissional</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <button class="menu-toggle" id="menu-toggle">☰</button>
+            <nav class="nav" id="nav">
+                <button class="close-nav" id="close-nav">✕</button>
+                <ul>
+                    <li><a href="#intro">Início</a></li>
+                    <li><a href="#sobre">Sobre Mim</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#testemunhos">Testemunhos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <div id="intro" class="intro">
+                <h1>Olá, Sou [Seu Nome]</h1>
+                <p>Desenvolvedor Web | Designer Gráfico | Criador de Conteúdo</p>
+                <a href="#contato" class="btn">Entre em Contato</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <h2>Sobre Mim</h2>
+            <div class="sobre-content">
+                <img src="sobre-mim.jpg" alt="Sobre Mim">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at justo vel quam facilisis venenatis. Nullam consequat justo vitae est bibendum, a vestibulum libero aliquet.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos" class="projetos">
+        <div class="container">
+            <h2>Meus Projetos</h2>
+            <div class="projeto-grid">
+                <div class="projeto">
+                    <img src="projeto1.jpg" alt="Projeto 1">
+                    <h3>Projeto 1</h3>
+                    <p>Descrição breve do Projeto 1.</p>
+                </div>
+                <div class="projeto">
+                    <img src="projeto2.jpg" alt="Projeto 2">
+                    <h3>Projeto 2</h3>
+                    <p>Descrição breve do Projeto 2.</p>
+                </div>
+                <div class="projeto">
+                    <img src="projeto3.jpg" alt="Projeto 3">
+                    <h3>Projeto 3</h3>
+                    <p>Descrição breve do Projeto 3.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testemunhos" class="testemunhos">
+        <div class="container">
+            <h2>O que dizem sobre mim</h2>
+            <div class="testemunho-grid">
+                <div class="testemunho">
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam commodo magna at justo consequat."</p>
+                    <h4>Nome do Cliente</h4>
+                </div>
+                <div class="testemunho">
+                    <p>"A experiência foi excelente, a entrega foi feita no prazo e o resultado superou minhas expectativas."</p>
+                    <h4>Nome do Cliente</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contato">
+        <div class="container">
+            <h2>Contato</h2>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 [Seu Nome]. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

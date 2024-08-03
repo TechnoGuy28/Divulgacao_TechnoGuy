@@ -1,0 +1,178 @@
+/* Reset básico */
+body, h1, h2, h3, h4, p, ul, li, a, form, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+/* Container para alinhamento centralizado */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Header e Navegação */
+header {
+    position: relative;
+    background: #333;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.menu-toggle {
+    display: none; /* Oculto por padrão, visível em telas menores */
+    background: #007bff;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav ul li {
+    margin: 0;
+}
+
+.nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav ul li a:hover {
+    color: #007bff;
+}
+
+.close-nav {
+    display: none; /* Oculto por padrão */
+    background: #007bff;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.intro {
+    padding: 5rem 1rem;
+    background: #007bff;
+    color: #fff;
+    text-align: center;
+    border-bottom: 5px solid #0056b3;
+}
+
+.intro h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.intro p {
+    font-size: 1.2rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background: #28a745;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #218838;
+}
+
+/* Sobre Mim */
+.sobre {
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.sobre-content {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.sobre-content img {
+    border-radius: 50%; /* dessa forma se arredonda bordas de imagem*/
+    width: 200px;
+    height: 200px;
+    object-fit: cover; /* o que isso faz?*/
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.sobre-content p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Projetos */
+.projetos {
+    background: #fff;
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.projeto-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.projeto {
+    background: #fff;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projeto:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.projeto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
