@@ -460,7 +460,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 400px) {
     body {
         height: fit-content;
         max-width: 360px;
