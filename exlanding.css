@@ -40,8 +40,7 @@ html {
 }
 body {
     height: fit-content;
-    max-width: 700px;
-    min-height: 466px;
+    width: 80%;
     margin: auto;
     box-shadow: 0 0 15px;
     border-radius: 4px;
@@ -104,7 +103,15 @@ body {
     width: 100px;
     position: absolute;
     float: left;
-    transform: translate(-13rem, -0.2rem);
+    transform: translate(1rem, 1.7rem);
+}
+main {
+    background-image: url(imagens/stones-1372677_1280.jpg);
+    background-position: center center; 
+    background-size: cover;
+    height: fit-content;
+    margin-top: 5px;
+    border-radius: 5px 5px 0 0;
 }
 h1 {
     height: 2.5rem;
@@ -118,36 +125,41 @@ h1 {
     z-index: 4;
 }
 header h2 {
-    top: 1.5em;
     font-size: 1.3rem;
     color: rgb(60, 63, 32);
     background-color: var(--cor1);
     font-family: var(--font2);
     padding: 17px 0;
-    margin-bottom: 7px;
     text-align: center;
+}
+.s1 {
+    position: relative;
+    height: 365.81px;
 }
 .bloco1 {
     display: grid;
+    position: absolute;
+    top: 50%;
+    left: 50%;
     grid-template-columns: repeat(2,1fr);
     align-content: space-around;
-    margin: auto;
     border-radius: 10px;
     background-color: #1e1f0e6b;
     width: 80%;
-    height: 250px;
-    margin-bottom: 3.11rem;
+    max-width: 800px;
+    height: 80%;
+    transform: translate(-50%, -50%);
 }
 .d1 {
     display: flex;
     justify-content: end;
-    padding-right: 0.5rem;
+    padding-right: 0.8rem;
 }
 .d1 p {
     font-family: var(--font1);
     text-align: end;
     color: beige;
-    margin: 0 8px;
+    margin: 0 10px;
 }
 .d1 img {
     cursor: pointer;
@@ -155,7 +167,7 @@ header h2 {
 .d2 {
     display: flex;
     justify-content: start;
-    padding-left: 0.5rem;
+    padding-left: 0.8rem;
 }
 .d2 p {
     font-family: var(--font1);
@@ -168,21 +180,32 @@ header h2 {
 .bloco1 img {
     max-width: 50px;
 }
+.ac1 {
+    background-color: hsla(89, 48%, 78%, 0.808);
+    width: 100%;
+    height: 25px;
+    text-align: center;
+    color: hsl(188, 33%, 19%);
+    font-family: var(--font2);
+    font-size: 1.2rem;
+    padding: 14px 0;
+}
 .aviso {
     display: none;
     font-family: var(--font3);
+    font-size: 1.1rem;
     position: absolute;
     height: 220px;
-    margin-left: 7rem;
-    margin-right: 7rem;
-    top: 8rem;
+    top: 50%;
+    left: 50%;
     border-radius: 10px;
     text-align: center;
-    padding: 20px 30px;
-    width: fit-content;
-    max-width: 400px;
+    padding: 10px 10px;
+    width: 52%;
+    max-width: 390px;
     background-color: hsla(323, 30%, 80%, 0.837);
     box-shadow:  0 0 700px rgb(0, 0, 0);
+    transform: translate(-50%, -50%);
     cursor: pointer;
 }
 .aviso img {
@@ -194,23 +217,24 @@ header h2 {
     padding: 1px;
 }
 .aviso strong {
-    color: hsl(180, 50%, 57%);
+    color: hsl(61, 100%, 51%);
 }
 .avisozap {
     display: none;
     font-family: var(--font2);
+    font-size: 1.2rem;
     position: absolute;
     height: 220px;
-    margin-left: 7rem;
-    margin-right: 7rem;
-    top: 8rem;
+    top: 50%;
+    left: 50%;
     border-radius: 10px;
     text-align: center;
-    padding: 20px 30px;
-    width: fit-content;
-    max-width: 400px;
+    padding: 23px 10px 10px;
+    width: 52%;
+    max-width: 390px;
     background-color: hsla(110, 60%, 59%, 0.877);
     box-shadow:  0 0 700px rgb(0, 0, 0);
+    transform: translate(-50%, -50%);
     cursor: pointer;
 }
 .avisozap img {
@@ -221,9 +245,10 @@ header h2 {
 }
 .parte2 {
     width: 100%;
-    max-width: 700px;
     height: 466px;
-    background: no-repeat left url(imagens/telacomp.png);
+    background-image:  url(imagens/telacomp.png);
+    background-position: left center;
+    background-size: cover;
 }
 .voce {
     width: fit-content;
@@ -267,9 +292,10 @@ header h2 {
 }
 .parte3 {
     width: 100%;
-    max-width: 700px;
     height: 460px;
-    background: no-repeat left url(imagens/Design\ sem\ nome.png);
+    background-image:  url(imagens/Design\ sem\ nome.png);
+    background-position: left center;
+    background-size: cover;
     margin-top: 5px;
 }
 .em {

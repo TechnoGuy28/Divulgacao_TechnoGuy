@@ -113,11 +113,9 @@ var submit = document.querySelector('#enviar');
 
 submit.addEventListener("click", function() {
    
-    var form = document.querySelector('.form-conteiner');
     var pedido = document.querySelector('.pedido')
 
     pedido.style.backgroundColor = '';
     pedido.style.color = '';
-    form.style.display = 'none';
 
 });
