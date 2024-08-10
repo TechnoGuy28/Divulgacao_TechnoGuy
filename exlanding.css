@@ -177,7 +177,6 @@ header h2 {
 }
 .ac1 {
     background-color: hsla(89, 48%, 78%, 0.808);
-    width: 100%;
     height: fit-content;
     text-align: center;
     color: hsl(188, 33%, 19%);
@@ -286,6 +285,7 @@ header h2 {
     animation: chegarsem 6s infinite;
 }
 .parte3 {
+    position: relative;
     width: 100%;
     height: 460px;
     background-image:  url(imagens/Design\ sem\ nome.png);
@@ -296,19 +296,24 @@ header h2 {
 .em {
     font-family: var(--font4);
     font-size: 2.5em;
-    position: relative;
-    color: var(--cor2);
-    float: right;
-    right: 0.3em;
-    top: 6.7em;
+    position: absolute;
+    color: var(--cor3);
+    top: 70%;
+    right: 28%;
 }
 .lugar {
     font-family: var(--font4);
     font-size: 3em;
+    position: absolute;
     color: var(--cor7);
-    float: right;
-    right: -3.5em;
-    top: 7em;
+    top: 82%;
+    left: 68%;
+}
+.seta {
+    width: 97px;
+    position: absolute;
+    top: 76%;
+    right: 35%;
 }
 .pedido_conteiner {
     width: 100%;
