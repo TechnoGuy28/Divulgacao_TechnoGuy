@@ -40,16 +40,11 @@ html {
 }
 body {
     height: fit-content;
-    width: 80%;
+    width: 90%;
+    max-width: 1080;
     margin: auto;
     box-shadow: 0 0 15px;
-    border-radius: 4px;
-}
-#stones {
-    position: absolute;
-    z-index: -1;
-    width: 360px;
-    height: 476px;
+    border-radius: 0 0 5px;
 }
 #menulateral {
     position: relative; 
@@ -100,7 +95,7 @@ body {
     color: rgb(255, 255, 255);
 }
 .logo {
-    width: 100px;
+    width: 95px;
     position: absolute;
     float: left;
     transform: translate(1rem, 1.7rem);
@@ -110,7 +105,7 @@ main {
     background-position: center center; 
     background-size: cover;
     height: fit-content;
-    margin-top: 5px;
+    margin-top: 2px;
     border-radius: 5px 5px 0 0;
 }
 h1 {
@@ -134,7 +129,7 @@ header h2 {
 }
 .s1 {
     position: relative;
-    height: 365.81px;
+    height: 370px;
 }
 .bloco1 {
     display: grid;
@@ -183,17 +178,17 @@ header h2 {
 .ac1 {
     background-color: hsla(89, 48%, 78%, 0.808);
     width: 100%;
-    height: 25px;
+    height: fit-content;
     text-align: center;
     color: hsl(188, 33%, 19%);
     font-family: var(--font2);
     font-size: 1.2rem;
-    padding: 14px 0;
+    padding: 5px 0;
 }
 .aviso {
     display: none;
     font-family: var(--font3);
-    font-size: 1.1rem;
+    font-size: 1rem;
     position: absolute;
     height: 220px;
     top: 50%;
@@ -222,7 +217,7 @@ header h2 {
 .avisozap {
     display: none;
     font-family: var(--font2);
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     position: absolute;
     height: 220px;
     top: 50%;
@@ -310,7 +305,6 @@ header h2 {
 .lugar {
     font-family: var(--font4);
     font-size: 3em;
-    position: relative;
     color: var(--cor7);
     float: right;
     right: -3.5em;
@@ -333,10 +327,10 @@ header h2 {
     color: #af0cafc4;
     background-color: #C6F24F;
     border-radius: 5px;
-    border: ridge var(--cor2);
+    border: outset var(--cor2);
     font-family: var(--font2);
     font-size: 1.3em;
-    box-shadow: inset 0 0 15px;
+    box-shadow: inset 0 25px 25px rgba(0, 0, 0, 0.021);
     cursor: pointer;
 }
 .form-conteiner {
@@ -486,11 +480,9 @@ footer {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 390px) {
     body {
-        height: fit-content;
-        max-width: 360px;
-        min-height: 466px;
+        width: 100%;
         margin: auto;
         box-shadow: 0 0 15px;
         border-radius: 4px;
@@ -506,8 +498,8 @@ footer {
         float: right;
         background-color: transparent;
         border-color: transparent;
-        margin-right: 10px;
-        font-size: 1.8rem;
+        margin-right: 7px;
+        font-size: 2.3rem;
         font-weight: bold;
         color: var(--cor5); 
         cursor: pointer;
@@ -520,7 +512,7 @@ footer {
         margin-right: 10px;
         margin-left: -0.01rem;
         top: 6px;
-        font-size: 1.6rem;
+        font-size: 1.7rem;
         font-weight: bold;
         color: var(--cor5);
         cursor: pointer;
@@ -539,12 +531,16 @@ footer {
         box-shadow: inset 0 0 10px rgba(102, 178, 226, 0.658);
     }
     main {
-        height: 710px;
-        margin-bottom: 10px;
+        background-image: url(imagens/stones-1372677_1280.jpg);
+        background-position: center center; 
+        background-size: cover;
+        height: fit-content;
+        margin-top: 2px;
+        border-radius: 5px 5px 0 0;
     }
     h1 {
         height: 2rem;
-        color:hsl(212, 83%, 50%);
+        color: hsl(182, 83%, 55%);
         background-color: rgba(0, 0, 0, 0.178);
         font-family: var(--font2);
         text-align: center;
@@ -560,11 +556,11 @@ footer {
         height: 710px;
     }
     header h2 {
-        font-size: 0.9rem;
+        font-size: 1rem;
         color: rgb(60, 63, 32);
         background-color: var(--cor1);
         font-family: var(--font2);
-        padding: 14px 0;
+        padding: 14px 5px;
         text-align: center;
     }
     .bloco1 {
@@ -575,10 +571,8 @@ footer {
         margin: auto;
         border-radius: 10px;
         background-color: #1e1f0e6b;
-        width: 99%;
-        height: 350px;
-        margin-top: 1rem;
-        margin-bottom: 3rem;
+        width: 91%;
+        height: 82%;
         padding-top: 1.5rem;
     }
     .bloco1 img {
@@ -588,9 +582,9 @@ footer {
     .ac1 {
         background-color: hsla(89, 48%, 78%, 0.808);
         text-align: center;
-        color: hsl(188, 33%, 19%);
+        color: rgb(60, 63, 32);
         font-family: var(--font2);
-        font-size: 1.2rem;
+        font-size: 1rem;
         padding: 14px 5px;
     }
     .d1 {
@@ -621,16 +615,15 @@ footer {
         font-family: var(--font3);
         position: absolute;
         height: 240px;
-        top: 11rem;
-        margin-left: 5%;
-        margin-right: 5%;
+        top: 50%;
+        left: 50%;
         border-radius: 10px;
         text-align: center;
-        padding: 20px 30px;
-        width: fit-content;
-        max-width: 260px;
+        padding: 10px 0;
+        width: 80%;
         background-color: hsla(323, 30%, 80%, 0.837);
         box-shadow:  0 0 700px rgb(0, 0, 0);
+        transform: translate(-50%, -50%);
         cursor: pointer;
     }
     .aviso img {
@@ -639,26 +632,50 @@ footer {
         width: 100px;
     }
     .avisozap {
-        display: none;
         font-family: var(--font3);
-        position: absolute;
         height: 240px;
-        margin-left: 5%;
-        margin-right: 5%;
-        top: 11rem;
-        border-radius: 10px;
-        text-align: center;
-        padding: 20px 30px;
-        width: fit-content;
-        max-width: 260px;
-        background-color: hsla(110, 60%, 59%, 0.877);
-        box-shadow:  0 0 700px rgb(0, 0, 0);
-        cursor: pointer;
+        top: 50%;
+        left: 50%;
+        padding: 10px 0;
+        width: 80%;
+        transform: translate(-50%, -50%);
     }
     .avisozap img {
         position: absolute;
         top: 7.5em;
         left: 25%;
         width: 150px;
+    }
+    .voce {
+        font-size: 2.8rem;
+    }
+    .rapido {
+        font-size: 2.2rem;
+        color: var(--cor5);
+    }
+    .facil {
+        font-size: 2.6em;
+    }
+    .sem {
+        font-size: 2.8em;
+        color: var(--cor7);
+    }
+    .parte3 {
+        position: relative;
+        background-position: center center;
+    }
+    .em {
+        position: absolute;
+        top: 65%;
+        color: #38cdfa;
+    }
+    .lugar {
+        position: absolute;
+        left: 52%;
+        top: 80%;
+    }
+    .pedido {
+        font-size: 1.1em;
+        width: 70%;
     }
 }
