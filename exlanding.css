@@ -339,7 +339,7 @@ header h2 {
     cursor: pointer;
 }
 .form-conteiner {
-    display: none;
+    /* display: none; */
     position: absolute;
     top: 70em;
     margin-left: 5.8em;
@@ -682,5 +682,12 @@ footer {
     .pedido {
         font-size: 1.1em;
         width: 70%;
+    }
+    .form-conteiner {
+        position: absolute;
+        max-width: 340px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }
