@@ -397,7 +397,7 @@ footer {
 @keyframes chegar {
     0% {
         opacity: 0;
-        transform: translate(4em, 13em);
+        transform: translate(2em, 13em);
     }
     3% {
         opacity: 0;
@@ -462,10 +462,10 @@ footer {
 @keyframes chegarsem {
     0% {
         opacity: 0;
-        transform: translate(4em, -13em);
+        transform: translate(2em, -13em);
     }
     35% {
-        transform: translate(4em, -13em);
+        transform: translate(2em, -13em);
     }
     38% {
         opacity: 0;
