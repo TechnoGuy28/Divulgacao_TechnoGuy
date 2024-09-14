@@ -339,7 +339,7 @@ header h2 {
     cursor: pointer;
 }
 .form-conteiner {
-    /* display: none; */
+    display: none;
     position: absolute;
     top: 70em;
     margin-left: 5.8em;
